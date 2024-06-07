@@ -1,0 +1,146 @@
+* {
+	font-family: Quest;
+	color: #353535;
+}
+@font-face{
+	font-family: Quest;
+	src:url(readables/Questrial-Regular.woff);
+}
+a:hover {
+    background-color: #27eefc;
+    border-radius: 5px;
+    border-bottom: 3px solid #0fff;
+}
+ header nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding:20px 20px 20px 20px;
+  }
+  nav ul {
+    display: inline;
+    padding: 20px 20px 20px 20px;
+  }
+   footer li {
+    list-style-type: none;
+    padding:6px 6px 6px 6px;
+  }
+ header nav li:hover, aside li:hover{
+    border-bottom: 2px solid;
+  }
+  aside li {
+    padding: 20px 20px 20px 20px;
+    list-style-type: none;
+  }
+  aside {
+    background-color: white;
+    color: gray;
+    overflow-x: hidden;
+    z-index: 1;
+    position: fixed;
+    transition: width 0.7s;
+    height: 100%;
+    top: 0;
+    width: 0%;
+    left: 0;
+  }
+  .img {
+	width: 600px;
+  }
+  .opnbtn{
+    font-size: 45px;
+  }
+  .clsbtn {
+    text-decoration: solid;
+  }
+  * main {
+    background-color: #a200ff;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+	border-bottom: 1px solid #3a65ff;
+  }
+  footer *{
+    box-sizing: border-box;
+  }
+  footer .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  footer .container:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  @media screen and (max-width: 600px) {
+    header nav {
+        display: none;
+      }
+      footer .column {
+        width: 100%;
+      }
+      .img {
+	width: 100%;
+      }
+    }
+    @media screen and (min-width: 600px) {
+      .opnbtn {
+        display: none;
+      }
+    }
+    .wdwn {
+	background-color: #0055ff;
+	border: none;
+	color: white;
+	padding: 14px 40px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+    }
+    .ldwn {
+	background-color: #55aa7f;
+	border: none;
+	color: white;
+	padding: 14px 40px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+    }
+    .wdwn a:hover{
+	border-bottom: none !important;
+	background-color: #0055ff !important;
+    }
+    .ldwn a:hover {
+    	border-bottom: none !important;
+	    background-color: #55aa7f !important;
+    }
+    .wdwn:hover{
+	  opacity:0.8;
+	  cursor: pointer;
+    }
+    .ldwn:hover{
+	   opacity:0.8;
+	   cursor: pointer;
+    }
+    .dhr {
+	width: 50%;
+    }
+    code {
+	background-color: #353336;
+	color:white !important;
+	padding: 14px 40px;
+	font-size: 18px;
+    }
+    .hbtn{
+	background-color:#2f8f8f;
+	border: none;
+	color: white;
+	padding: 14px 40px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+    }
