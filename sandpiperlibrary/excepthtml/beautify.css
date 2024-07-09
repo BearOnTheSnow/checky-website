@@ -1,0 +1,182 @@
+@font-face{ 
+    src: url(Kalnia/font.ttf);
+    font-family: "Kalnia";
+}
+body {
+    margin: 0;
+    background-color: #ede8d0;
+    color:  #3b220b;
+    font-family: "Kalnia", serif;
+    font-optical-sizing: auto;
+    font-weight: 310;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    background-color: #54463a;
+    color: #ede8d0;
+    overflow: hidden;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+header > h1 {
+    padding-left: 20px;
+}
+header > nav {
+    float: right;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 16px;
+}
+header > nav > h1 {
+    float: left;
+}
+header > nav > a {
+    padding: 8px;
+    text-decoration: none;
+    color: #ede8d0;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+#hero > div {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+#hero > div+div {
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+}
+#hero > div > .herodesc {
+    font-size: 40px;
+}
+#hero > div > .cta {
+    font-size: 36px;
+    background-color: #54463a;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px;
+    filter: drop-shadow(0px 5px rgba(0, 0, 0, 0.25));
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+#hero > div > .cta > a {
+    text-decoration: none;
+    color: #ede8d0;
+}
+
+#about {
+    font-size: 32px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+#about > .desc, #about > .features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about > .desc > .logo, #about > .features > div {
+    width: 40%;
+}
+#about > .desc > .abtdesc, #about > .features > div + div{
+    width: 60%;
+    padding: 10px;
+}
+#about > .desc > .logo > img {
+    height: 65% !important;
+}
+
+#using {
+    display: flex;
+    font-size: 26px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+#using > .desc, #using > .img {
+    width: 50%;
+}
+
+#source > .wrapper {
+    display: flex;
+    height: 100%;
+    position: relative;
+    flex-direction: row;
+}
+#source > .wrapper > .left > img {
+    align-items: center;
+}
+#source > .wrapper > div {
+    width: 50%;
+    font-size: 28px;
+    padding: 30px;
+    margin-top: auto;
+}
+
+hr {
+    color: white;
+}
+
+footer {
+    display: flex;
+    padding: 10px;
+}
+footer > div {
+    width: 50%;
+    font-size: 24px;
+    padding: 10px;
+}
+footer > div + div > nav > a {
+    text-decoration: none;
+    font-size: 28;
+    color: #54463a;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+footer > div + div > nav, footer > div + div > h3 {
+    padding-left: 70px;
+}
+.end {
+    padding: 20px;
+}
+
+@media (max-width:960px) {
+    header, #hero, #using, #about > .desc, #about > .features, footer, #source > .wrapper {
+        display: block;
+    }
+    footer > div, #using > .desc, #source > wrapper > div, #using > .img, #about > .desc > .abtdesc, #about > .features > div + div, #about > .desc > .logo, #about > .features > div, #hero > div, #hero > div+div {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        margin: 0;
+    }
+    * {
+        font-size: 20px !important;
+    }
+    header > nav {
+        display: none;
+    }
+    #using > .img {
+        width: 80%;
+    }
+}
