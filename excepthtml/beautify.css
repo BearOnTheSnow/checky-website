@@ -1,0 +1,320 @@
+:root {
+    --domcol: #122620;
+    --seccol: #F4EBD0;
+}
+@font-face {
+    font-family: JacquesFrancois-Regular;
+    src: url(../excepthtml/Jacques_Francois/JacquesFrancois-Regular.ttf);
+}
+html {
+    font-size: 2.5vw;
+}
+body {
+    margin: 0;
+    font-family: JacquesFrancois-Regular;
+    font-style: none;
+    font-weight: normal;
+    
+}
+a, button {
+    font-family: JacquesFrancois-Regular;
+    text-decoration: none;
+}
+
+/*header section*/
+header {
+    background-color: var(--domcol);
+    color: var(--seccol);
+    display: flex;
+    width: 100%;
+    color: var(--seccol) !important;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 20vh;
+}
+#title {
+    font-size: 1rem;
+    padding: 20px 20px;
+}
+/*navigation*/
+header > nav {
+    padding: 20px 0px 20px 0px;
+    margin-right: 1%;
+    float: right;
+    display: block;
+}
+header > nav > a {
+    font-size: 0.625rem;
+    color: var(--seccol);
+    text-decoration: none;
+    vertical-align: middle;
+    padding-right: 46px;
+}
+header > nav > a > span {
+	padding: 3px 7px;
+}
+header > nav > a > span:hover {
+	color: #722720;
+	background-color: var(--seccol);
+	border-radius: 25px;
+    cursor: pointer;
+}
+/*nav button*/
+header > nav > button {
+    background-color: var(--seccol);
+    padding: 15px 8px;
+    border: none;
+    vertical-align: middle;
+    text-decoration: none;
+    color: var(--domcol);
+    font-size: 0.625rem;
+}
+header > nav > button:hover {
+    background-color: #DDC7A0;
+    padding: 15px 8px;
+    border: none;
+    vertical-align: middle;
+    cursor: url('images/cursor.png'), auto;;
+}
+
+/*hero section*/
+#hero {
+    background-color: var(--domcol);
+    color: var(--seccol);
+    display: grid;
+    place-items: center;
+    width: 100%;
+    overflow: hidden;
+    min-height: 90vh;
+    text-align: center;
+}
+#herocopy, h1 {
+    font-size: 1.46rem;
+    font-weight: normal;
+}
+#herocta a {
+    text-decoration: none;
+    color: var(--domcol);
+}
+#herocta {
+    background-color: #D6AD60;
+    font-size: 0.7rem;
+    border: none;
+    padding: 20px;
+}
+#herocta:hover, #herocta a:hover {
+	background-color: var(--seccol);
+    cursor: url('images/cursor.png'), auto;
+    transition: ease-in 1s linear 1s 3 forward none;
+}
+
+/*services section*/
+#services {
+    display: grid;
+    width: 100%;
+    background-color: var(--seccol);
+    color: var(--domcol);
+    min-height: 80vh;
+    place-items: center;
+}
+#parent_container {
+    min-height: 60vh;
+} 
+#services > #parent_container{
+    font-size: 1.3rem;
+	width: 100%;
+	height: 70%;
+}
+#services tr {
+    height: 100%;
+    vertical-align: bottom;
+    text-align: center;
+}
+#services > h1 {
+    margin: 0% 0%;
+}
+#services #webdevimg {
+    width: 80%;
+    height: 80%;
+}
+#services #webdesimg {
+	width: 80%;
+	height: 50%;
+}
+
+/*contact section*/
+#contact {
+    width: 100%;
+    background-color: var(--seccol);
+    color: var(--domcol);
+    display: grid;
+    place-items: center;
+    padding-bottom: 20px;
+}
+#contact button {
+    background-color: #D6AD60;
+    font-size: 0.668rem;
+    padding: 15px;
+    border: none;
+}
+#contact button:hover {
+    opacity: 0.85;
+}
+#contact button > a {
+    color: var(--domcol);
+}
+#contact button > a > #emailicon {
+    width: 20%;
+    height: 95%;
+    vertical-align: text-top;
+    padding: 5px;
+}
+#contact button > a > #callicon {
+    width: 20%;
+    height: 95%;
+    vertical-align: middle;
+    padding: 3px;
+}
+#contact #cta {
+    padding: 30px;
+    text-align: left;
+    padding-right: 5vh;
+}
+#contact #info {
+    font-size: 1.4rem;
+    width: 50%;
+    padding-left: 25vh;
+}
+#contact span {
+    font-size: 0.6875rem;
+    padding-left: 10px;
+}
+
+/*projects list*/
+#projects {
+    width: 100%;
+    background-color: var(--domcol);
+    color: var(--seccol);
+    display: grid;
+    place-items: center;
+}
+#projecttitle {
+    font-size: 0.9rem;
+}
+#projectdesc {
+    font-size: 0.7rem;
+}
+#skill {
+    font-size: 0.7rem;
+    border: 2px solid white;
+    background-color: #DDC7A0;
+    border-radius: 25px;
+    padding: 5px;
+    color: var(--domcol);
+    margin: 5px;
+}
+#skills {
+    font-size: 0.7rem;
+    line-height: 50px;
+}
+#projects #project #pictures {
+    width: 53.62%;
+}
+#projects #project #info {
+    width: 46.38%;
+    padding: 10px;
+}
+#projects img {
+    width: 100%;
+}
+
+/*carousel*/
+#pictures {
+    position: relative;
+    margin: auto;
+}
+.carousel1, .carousel2, .carousel3, .carousel4 {
+    display: none;
+}
+.prev1,.next1, .prev2,.next2, .prev3,.next3, .prev4,.next4 {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    transition: 0.6s ease;
+    user-select: none;
+    padding: 3px;
+    background-color: var(--domcol);
+    color: var(--seccol);
+}
+.next1, .next2, .next3, .next4 {
+    right: 1px;
+}
+.anim {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1}
+}
+
+/*footer */
+#footertext {
+    font-size: 0.6875rem;
+    padding-left: 15px;
+}
+
+
+
+/*responsive*/
+@media screen and (max-width: 650px) {
+    html {
+        font-size: 4.5vw;
+    }
+
+    /*header*/
+	header {
+        display: grid;
+        min-height: 120px;
+        align-items: center;
+    }
+
+    /*hero section*/
+    #hero {
+        height: 80vh;
+    }
+
+    /*formatting table*/
+    #parent_container tr *, #project tr *, #contact > table tr *{
+        display: block;
+    }
+    #parent_container tr, #project tr, #contact tr {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    /*projects*/
+    #projects #project #pictures {
+        width: 100%;
+    }
+    #projects #project #info {
+        width: 98%;
+        padding: 10px;
+    }
+    #skill {
+        padding: 0px 3px;
+        max-width: 60%;
+    }
+
+    /*contact*/
+    #contact #cta {
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+    #contact #cta #button {
+        width: 90%;
+    }
+}

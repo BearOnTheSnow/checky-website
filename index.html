@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarav Kaushik | Websites And The Web, For YOU</title>
+    <link rel="stylesheet" href="excepthtml/beautify.css">
+</head>
+<body>
+    <!--Header of the website-->
+    <header id="home">
+        <span id="title">Aarav Kaushik</span>
+        <nav>
+            <a onclick="scrollToSection('home')"><span>Home</span></a>
+            <a onclick="scrollToSection('services')"><span>Services</span></a>
+            <a onclick="scrollToSection('projects')"><span>Projects</span></a>
+            <button class="navcta" onclick="scrollToSection('contact')">GET IN TOUCH</button>
+        </nav>
+    </header>
+
+
+    <!--Hero section-->
+    <main id="hero">
+        <img src="" alt="Aarav">
+        <p id="herocopy">One Page Websites, quickly, beautifully</p>
+        <button id="herocta" onclick="scrollToSection('contact')">GET IN TOUCH</button>
+    </main>
+
+
+    <!--Services section-->
+    <section id="services">
+        <h1>SERVICES</h1>
+        <table id="parent_container">
+            <tr>
+                <td id="container">
+                    <img src="excepthtml/images/webdev.png" alt="Web Development" id="webdevimg">
+                    <p>Web Development</p>
+                </td>
+                <td id="container">
+                    <img src="excepthtml/images/webdes.png" alt="Web Design" id="webdesimg">
+                    <p>Web Design</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+
+    <!--Section displaying past projects-->
+    <section id="projects">
+        <h1>PROJECTS</h1>
+        <!--Subsections begin, projects + desc-->
+
+        <!--Project 1-->
+        <table id="project">
+            <tr id="projdetails">
+                <td id="pictures">
+                    <div class="carousel1 anim"><img src="excepthtml/images/projects/checkywebsite/main.jpeg" alt=""></div>
+                    <div class="carousel1 anim"><img src="excepthtml/images/projects/checkywebsite/secondary.jpeg" alt=""></div>
+                    <a onclick="addSlide1(-1)" class="prev1">&#10094;</a>
+                    <a onclick="addSlide1(1)" class="next1">&#10095;</a>
+                </td>
+                <td id="info">
+                    <h3 id="projecttitle">Checky Website</h3>
+                    <p id="projectdesc">Single-page website for the Checky app. Written in HTML and CSS.</p>
+                    <p id="skills">Skills: <span id="skill">Front-End Development </span><span id="skill">Copywriting </span><span id="skill">Single Page Website </span><span id="skill">HTML/CSS </span></p>
+                </td>
+            </tr>
+        </table>
+        <!--Project 2-->
+        <table id="project">
+            <tr id="projdetails">
+                <td id="pictures">
+                    <div class="carousel2 anim"><img src="excepthtml/images/projects/checkylicensegenerator/main.png" alt=""></div>
+                </td>
+                <td id="info">
+                    <h3 id="projecttitle">Checky License Generator</h3>
+                    <p id="projectdesc">A simple web app to generate the Checky License for your app</p>
+                    <p id="skills">Skills: <span id="skill">Responsive Web Design </span><span id="skill">Web development </span><span id="skill">Javascript </span><span id="skill">HTML </span><span id="skill">CSS </span></p>
+                </td>
+            </tr>
+        </table>
+        <!--Project 3-->
+        <table id="project">
+            <tr id="projdetails">
+                <td id="pictures">
+                    <div class="carousel3 anim"><img src="excepthtml/images/projects/sandpiperlibrarywebsite/main.jpeg" alt=""></div>
+                    <div class="carousel3 anim"><img src="excepthtml/images/projects/sandpiperlibrarywebsite/secondary.jpeg" alt=""></div>
+                    <a onclick="addSlide3(-1)" class="prev3">&#10094;</a>
+                    <a onclick="addSlide3(1)" class="next3">&#10095;</a>
+                </td>
+                <td id="info">
+                    <h3 id="projecttitle">Sandpiper Library Website</h3>
+                    <p id="projectdesc">Single-page website of the desktop app Sandpiper Library. Written in HTML and CSS.</p>
+                    <p id="skills">Skills: <span id="skill">Front-End Development </span><span id="skill">Copywriting </span><span id="skill">Single Page Website </span><span id="skill">HTML/CSS </span></p>                
+                </td>
+            </tr>
+        </table>
+        <!--Project 4-->
+        <table id="project">
+            <tr id="projdetails">
+                <td id="pictures">
+                    <div class="carousel4 anim"><img src="excepthtml/images/projects/sandpiperlibrary/main.jpeg" alt=""></div>
+                    <div class="carousel4 anim"><img src="excepthtml/images/projects/sandpiperlibrary/secondary.jpeg" alt=""></div>
+                    <a onclick="addSlide4(-1)" class="prev4">&#10094;</a>
+                    <a onclick="addSlide4(1)" class="next4">&#10095;</a>
+                </td>
+                <td id="info">
+                    <h3 id="projecttitle">Sandpiper Library</h3>
+                    <p id="projectdesc">An open-source desktop app to manage a personal library. Features: add, edit and delete members and books; add and delete genres; issue and return books; keep track of books that have been lent; search features; import and export data.</p>
+                    <p id="skills">Skills: <span id="skill">Flask </span><span id="skill">Front-End Development </span><span id="skill">Desktop App Development </span><span id="skill">Web Development </span><span id="skill">Python </span></p>                
+                </td>
+            </tr>
+        </table>
+    </section>
+
+
+    <!--Contact page here-->
+    <section id="contact">
+        <h1>GET IN TOUCH</h1>
+        <table>
+            <tr>
+                <td id="info">
+                    Let's get in touch to discuss your project further!
+                </td>
+                <td id="cta">
+                    <button><a href="mailto:aarav.kaushik@protonmail.com"><img src="excepthtml/images/EmailIcon.png" alt="Email Icon" id="emailicon">EMAIL</a></button><span>aarav.kaushik@protonmail.com</span><br><br><button><a href="tel:+61425188164"><img src="excepthtml/images/CallIcon.png" alt="Call Icon" id="callicon">CALL</a></button><span>+61 425 188 164</span>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+
+    <!--Footer here-->
+    <footer>
+        <p id="footertext"><!--Copyright notice with JS here--></p>
+    </footer>
+
+    <script src="excepthtml/func.js" defer></script>
+</body>
+</html>
